@@ -51,7 +51,7 @@ bool Movie::checkYearValidity(int Year) {
 
 	int currentYear = ltm->tm_year + 1900;
 
-	if (Year > currentYear) {
+	if (Year > currentYear || Year < 1896) {
 		
 		int anotherTry = 0;
 		std::cout << "Wise guy, eh? Back To The Future is this way ==> \n ... now try again: " << std::endl;
